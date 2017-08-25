@@ -160,6 +160,12 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand.active {
   color: #fec503;
 }
+
+@media screen and (min-width:769px) and (max-width:991px){
+  .navbar-brand{
+    display: none;
+  }
+}
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
@@ -225,6 +231,7 @@ fieldset[disabled] .btn-xl.active {
     font-size: 1.5em;
   }
 }
+
 header {
   /*background-image:url(../img/safety-first-on-the-metal-gears-on-black-background-EH5EHJ.jpg);
   background-repeat:no-repeat;
@@ -242,8 +249,12 @@ header .intro-text {
 }
 
 .company-logo {
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 50px;
+}
+.logo-brand{              /* logo-properties */
+  width: 300px;
+  height: 300px;
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -263,7 +274,7 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 250px;
+    padding-top: 120px;
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
@@ -313,16 +324,16 @@ section h3.section-subheading {
   text-transform: none;
 }
 
-.snap-row2 {           /* snapshots margin for row-2 */
+.service-row2 {           /* snapshots margin for row-2 */
           margin-top: 40px;
           }
 
-  .snap-images-thumb {              /* Snapshots image label */
+  .service-images-thumb {              /* Service image label */
                       width: 400px;
                       height: 250px;
                     }
 
-   .snap-images-full {               /* Snapshots image full */
+   .service-images-full {               /* Service image full */
                 width: 550px;
                 height: 300px;
                 }
@@ -386,6 +397,25 @@ section h3.section-subheading {
   font-size: 16px;
   margin: 0;
 }
+
+.service-caption {
+  color: black;
+  text-decoration:none;
+}
+
+.service-caption:link{
+  color:black;
+  text-decoration:none;
+}
+
+.service-caption:hover{
+  color: black;
+  text-decoration: underline;
+}
+.service-caption:active{
+  color:black;
+}
+
 #portfolio * {
   z-index: 2;
 }
@@ -681,54 +711,10 @@ ul.social-buttons li a:active {
   outline: none;
 }
 
-.jumbotron {
+/* .jumbotron {
   background-color: #9E9E9E;
-}
-.modal-span span {
-  display: inline-block;
-  font-size: 3em;
-  position: absolute;
-  top: -15px;
-    right: 0px;
-}
+} */
 
-
-.modal-list>li {
-  padding: 10px;
-  text-align: center;
-}
-
-.list-modal1,.list-modal2,.modal-small {
-  margin-top: 30px;
-  padding-top: 40px;
-  background-color: #eee8d9;
-  box-shadow: 8px 8px 15px gray;
-  font-weight: 600 ;
-}
-
-@media screen and (max-width: 767px){
-
-  .list-modal1 {
-     padding-top: 20px;
-    }
-.list-modal2{
-    padding-top: 20px;
-}
-}
-
-@media screen and (min-width: 768px){
-
-    .list-modal1 {
-      min-height: 280px;
-    }
-    .list-modal2 {
-      min-height: 290px;
-    }
-
-    .modal-small {
-      min-height: 260px;
-    }
-}
 
 .portfolio-modal .modal-dialog {
   margin: 0;
@@ -743,7 +729,7 @@ ul.social-buttons li a:active {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
+ /* text-align: center; */
 }
 .portfolio-modal .modal-content h2 {
   margin-bottom: 15px;
@@ -811,6 +797,90 @@ ul.social-buttons li a:active {
   opacity: 0;
   display: none;
 }
+
+.modal-span span {
+  display: inline-block;
+  font-size: 3em;
+  position: absolute;
+  top: -15px;
+    right: 0px;
+}
+
+
+.modal-list>li {
+  padding: 10px;
+  text-align: center;
+}
+
+.list-modal1,.list-modal2,.modal-small {
+  margin-top: 30px;
+  padding-top: 40px;
+  background-color: #eee8d9;
+  box-shadow: 8px 8px 15px gray;
+  font-weight: 600 ;
+}
+
+@media screen and (max-width: 767px){
+
+  .list-modal1 {
+     padding-top: 20px;
+    }
+.list-modal2{
+    padding-top: 20px;
+}
+.modal-small {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}
+
+@media screen and (min-width: 768px){
+
+    .list-modal1 {
+      min-height: 330px;
+    }
+    .list-modal2 {
+      min-height: 340px;
+    }
+
+    .modal-small {
+      min-height: 270px;
+    }
+
+    .modal-list>li {
+ font-size: 1.35em;
+}
+.modal-body p{
+  font-size: 1.5em;
+}
+}
+
+.trainers {
+  padding-top: 90px; 
+  text-align: left;
+}
+
+.trainers-heading {
+  
+  margin-bottom: 50px;
+}
+
+.snapshots{
+   padding-top: 90px; 
+  text-align: left;
+}
+.snap-heading {
+  margin-bottom: 50px;
+}
+.snap-image {
+      border: 1px solid #9E9E9E;
+    padding: 5px;
+}
+
+.btn-x2{
+  margin-top: 50px;
+}
+
 ::-moz-selection {
   text-shadow: none;
   background: #fed136;
