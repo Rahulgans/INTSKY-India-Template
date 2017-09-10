@@ -1,10 +1,11 @@
 
 
-I have edited the Bootstrap-Agency theme for a work of my own .
+INTSKY-India. A safety based startup providing services right from HSE trainings to Computer application development.
 
 ## Credits
+I have used Bootstrap agency theme for this site.
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+**Start Bootstrap** was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
 * https://twitter.com/davidmillerskt
 * https://github.com/davidtmiller
