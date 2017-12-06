@@ -1,6 +1,6 @@
 
 
-INTSKY-India. A safety based startup providing services right from HSE trainings to Computer application development.
+Created a website for INTSKY-India, A safety based startup providing services right from HSE trainings to Computer application development.
 
 ## Credits
 I have used Bootstrap agency theme for this site.
